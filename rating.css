@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@media only screen and (max-width: 900px) {
+  .container1 {
+      display: none !important;
+  }
+  .hh2{
+    display: none;
+  }
+}
+.container1{
+    position: relative;
+    width: 400px;
+    background: linear-gradient(to top, #536976, #292e49);
+    padding: 20px 30px;
+    border: 0.2rem solid #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container1 .post{
+    display: none;
+    
+  }
+  .container1 .text{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+   font-family:'Sofia Sans Extra Condensed' ;
+  }
+ 
+  .container1 .edit {
+      padding-top: 18px;
+    position: absolute;
+    right: 10px;
+  top: 0;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .container1 .edit:hover{
+    text-decoration: underline;
+  }
+  .container1 .star-widget input{
+    display: none;
+  }
+  .star-widget label{
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+  }
+  input:not(:checked) ~ label:hover,
+  input:not(:checked) ~ label:hover ~ label{
+    color: #FFDF00;
+  }
+  input:checked ~ label{
+    color: #FFDF00;
+  }
+  input#rate-5:checked ~ label{
+    color: rgb(254, 236, 97) !important;
+    text-shadow: 0 0 10px goldenrod;
+  }
+  #rate-1:checked ~ form header:before{
+    content: " Not Satisfied ! 😡";
+    color: #fff;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif !important;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-left: 2.5rem !important;
+  }
+  #rate-2:checked ~ form header:before{
+    content: " Not Bad! 😩";
+    color: #fff;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif !important;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  #rate-3:checked ~ form header:before{
+    content: "It is awesome ! 🙂";
+    color: #fff;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif !important;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  #rate-4:checked ~ form header:before{
+    content: "I just like it !  🥰 ";
+    color: #fff;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif !important;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  #rate-5:checked ~ form header:before{
+    content: "Well Described !🤩 ";
+    color: #fff;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif !important;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .container1 form{
+    display: none;
+  }
+  input:checked ~ form{
+    display: block;
+  }
+  form header{
+    width: 100%;
+    font-size: 25px;
+    color: #fe7;
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+  }
+  #name{
+    display: block;
+    
+  }
+  form .textarea , #name{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+  }
+  form .textarea textarea , #name{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: white !important;
+    border: 1px solid #f4be07 !important;
+ 
+    padding: 10px;
+    font-size: 1.2rem;
+    resize: none;
+  }
+  #userdata{
+    text-transform: capitalize !important;
+    color: #f4be07;
+  }
+  ::placeholder{
+    color: white;
+  }
+  .textarea textarea:focus{
+    border-color: #f4be07;
+  }
+  form .btn{
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+    
+
+  }
+ 
+    form .btn button:hover{
+    background-color: rgba(62, 134, 62, 0.8);
+  }
+  /* ================SLIDER====================== */
+
+
+  .hovereffect2 {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+
+  }
+  
+  .hovereffect2 .overlay2 {
+    position: absolute;
+    overflow: hidden;
+    width: 80%;
+    height: 70%;
+    left: 5%;
+    top: 20%;
+    border-bottom: 0.24rem solid rgb(242, 174, 2);
+    border-top: 0.24rem solid goldenrod;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    -ms-transform: scale(0,1);
+    transform: scale(0,1);
+    
+  }
+  
+  .hovereffect2:hover .overlay2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  
+  }
+ 
+  
+  .hovereffect2 img {
+    border-radius: 8px;
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    
+  }
+  
+  .hovereffect2:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(0.6);
+    -webkit-filter: brightness(0.6);
+    opacity: 0.2;
+   
+    
+  }
+  
+  .hovereffect2 h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    background-color: transparent;
+    color: #FFF;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
+  }
+  
+  .hovereffect2 a, .hovereffect2 p {
+   color: #FFF;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+  }
+  
+  .hovereffect2:hover a, .hovereffec2t:hover p, .hovereffect2:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+   
+  }
+  small{
+    color: #f4be07;
+    font-size: 1.9rem !important;
+    font-weight: bold;
+    display: block;
+    font-family: 'Lobster Two' !important;
+  }
+  .overlay2 h2 ,.box p ,.box2 p {
+    font-size: 2.5rem;
+    font-family: 'Oleo Script' !important;
+  }
+  .ani{
+    color: #f4be07 !important;
+  }
+  
+  .ani {
+    
+    background: linear-gradient(to right, #f4be07, hsl(0, 0%, 100%) 10%,#f4be07);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 20.6rem;
+    }
+    100% {
+      background-position: 20.6rem;
+    }
+  }
